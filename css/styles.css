@@ -46,22 +46,36 @@ img {
 }
 
 #reg {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
     position: relative;
     box-shadow: var(--box-shadow);
 }
 
+.regsec {
+    background: url(/images/trybg1\ copy.png) no-repeat center;
+    background-size: cover;
+}
+
+.main-cont {
+    background-color: rgba(232, 198, 255, 0.2);
+    border: 1px solid #ddd7e6;
+}
+
+.contbox .team-container {
+    padding: 0 35px;
+}
+
 .contbox {
     padding: 20px 0;
     font-family: "Poppins", sans-serif;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
 }
 
 .contbox h4 {
     font-size: 30px;
     text-transform: uppercase;
-    color: var(--primary);
+    color: #4a0b6b;
 }
 
 .contbox .form-field {
@@ -74,29 +88,29 @@ img {
     width: 100%;
     height: 36px;
     border-width: 0 0 2px 0;
-    border-color: rgb(197, 197, 197);
+    border-color: rgba(232, 198, 255, 0.5);
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
+    background-color: rgba(red, green, blue, alpha);
+    border-radius: 5px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .contbox .team-names:focus {
     outline: none;
     border-width: 0px 0px 2px 0;
-    border-color: var(--primary);
+    border-color: #4a0b6b;
     font-size: 18px;
+    box-shadow: none;
 }
 
 .contbox .team-names:focus + .label,
 .contbox .team-names.not-empty + .label {
-    transform: translateY(-24px);
+    transform: translateY(-24px) translateX(-10px);
+
     font-size: 18px;
     font-weight: 500;
-}
-
-.contbox .team-names:focus + .labelsmall,
-.contbox .team-names.not-empty + .labelsmall {
-    transform: translateY(-24px);
 }
 
 .contbox .label {
@@ -106,7 +120,7 @@ img {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-    color: var(--primary);
+    color: #4a0b6b;
     cursor: text;
     transition: transform 0.2s ease-in-out;
 }
@@ -127,13 +141,12 @@ img {
     padding: 10px 26px;
     border-radius: 5px;
     border: 1px solid;
-    color: #4a0b6b;
+    color: #ddd7e6;
     transition: all 0.8s ease;
 }
 
 .contbox .btncust:hover {
-    background: url(/images/70278-abstractembossedcubicpatternvioletbackground.jpg)
-        no-repeat center;
+    background: url(/images/trybg1\ copy.png) no-repeat center;
     background-size: cover;
     color: var(--white);
     font-weight: 500;
@@ -149,8 +162,7 @@ img {
     color: #4a0b6b;
 }
 .navbar .btn:hover {
-    background: url(/images/70278-abstractembossedcubicpatternvioletbackground.jpg)
-        no-repeat center;
+    background: url(/images/trybg1\ copy.png) no-repeat center;
     background-size: cover;
     color: var(--white);
 }
@@ -189,6 +201,10 @@ img {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
 }
 
 .formt {
@@ -214,6 +230,7 @@ img {
 .form-box {
     font-weight: bold;
     color: var(--primary);
+    border-radius: 10px;
 }
 
 .form-box h2 {
