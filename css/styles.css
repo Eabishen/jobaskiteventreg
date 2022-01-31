@@ -53,7 +53,7 @@ img {
 }
 
 .regsec {
-    background: url(/images/trybg1\ copy.png) no-repeat center;
+    background: url(/images/bg.png) no-repeat center;
     background-size: cover;
 }
 
@@ -146,7 +146,7 @@ img {
 }
 
 .contbox .btncust:hover {
-    background: url(/images/trybg1\ copy.png) no-repeat center;
+    background: url(/images/bg.png) no-repeat center;
     background-size: cover;
     color: var(--white);
     font-weight: 500;
@@ -162,7 +162,7 @@ img {
     color: #4a0b6b;
 }
 .navbar .btn:hover {
-    background: url(/images/trybg1\ copy.png) no-repeat center;
+    background: url(/images/bg.png) no-repeat center;
     background-size: cover;
     color: var(--white);
 }
