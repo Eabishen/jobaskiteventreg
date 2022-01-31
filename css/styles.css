@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Andada Pro", serif;
+    text-align: justify;
 }
 
 .container {
@@ -22,7 +23,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p .display-4 {
     color: var(--dark);
     font-weight: 700;
@@ -41,30 +41,124 @@ img {
     outline: none;
 }
 
+#hero {
+    font-family: "Poppins", sans-serif;
+}
+
+#reg {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.contbox {
+    padding: 20px 0;
+    font-family: "Poppins", sans-serif;
+    box-shadow: var(--box-shadow);
+}
+
+.contbox h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.contbox .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.contbox .team-names {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(197, 197, 197);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contbox .team-names:focus {
+    outline: none;
+    border-width: 0px 0px 2px 0;
+    border-color: var(--primary);
+    font-size: 18px;
+}
+
+.contbox .team-names:focus + .label,
+.contbox .team-names.not-empty + .label {
+    transform: translateY(-24px);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contbox .team-names:focus + .labelsmall,
+.contbox .team-names.not-empty + .labelsmall {
+    transform: translateY(-24px);
+}
+
+.contbox .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--primary);
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contbox .labelsmall {
+    position: absolute;
+    left: 30px;
+    bottom: 52px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--primary);
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contbox .btncust {
+    padding: 10px 26px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #4a0b6b;
+    transition: all 0.8s ease;
+}
+
+.contbox .btncust:hover {
+    background: url(/images/70278-abstractembossedcubicpatternvioletbackground.jpg)
+        no-repeat center;
+    background-size: cover;
+    color: var(--white);
+    font-weight: 500;
+}
+
 .navbar {
     box-shadow: var(--box-shadow);
-    overflow: hidden;
 }
 
 .navbar .btn {
     font-size: 15px;
+    border: 1px solid;
+    color: #4a0b6b;
+}
+.navbar .btn:hover {
+    background: url(/images/70278-abstractembossedcubicpatternvioletbackground.jpg)
+        no-repeat center;
+    background-size: cover;
+    color: var(--white);
 }
 
 .navbar .nav-link {
     font-family: Roboto, "sans-serif";
     font-size: 14px;
     font-weight: 700;
-}
-
-.btncust {
-    padding: 10px 12px;
-    color: var(--primary);
-    font-weight: 600;
-    border: 1px solid var(--primary);
-}
-.btncust:hover {
-    background-color: var(--primary);
-    color: var(--white);
 }
 
 #registeration {
@@ -86,7 +180,7 @@ img {
 }
 
 .form-container {
-    background-color: var(--body);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
 }
@@ -97,17 +191,52 @@ img {
     min-height: 100vh;
 }
 
-.form-box h4 {
+.formt {
+    position: relative;
+}
+
+.formt input {
+    width: 100%;
+    height: 100%;
+    color: #5d4f72;
+    padding-top: 20px;
+    border: none;
+}
+
+.fromt label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-box {
     font-weight: bold;
     color: var(--primary);
 }
 
-.col-sm-6 {
-    padding-top: 10px;
+.form-box h2 {
+    color: #4a0b6b;
 }
 
-.form-label {
-    margin-top: 10px;
+.form-box .last-cont h5 {
+    text-align: justify;
+}
+.form-box .last-cont p {
+    text-align: justify;
+    font-weight: 700;
+}
+
+.form-box h6 {
+    line-height: 25px;
+    color: var(--dark);
+    text-align: justify;
+}
+
+.form-box p {
+    line-height: 25px;
+    color: var(--dark);
 }
 
 /* footer */
