@@ -1,0 +1,167 @@
+:root {
+    --primary: #5d4f72;
+    --white: #fff;
+    --dark: #21252f;
+    --body: #dfceff;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Andada Pro", serif;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p .display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+#registeration .formcust {
+    outline: none;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.navbar .btn {
+    font-size: 15px;
+}
+
+.navbar .nav-link {
+    font-family: Roboto, "sans-serif";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btncust {
+    padding: 10px 12px;
+    color: var(--primary);
+    font-weight: 600;
+    border: 1px solid var(--primary);
+}
+.btncust:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+#registeration {
+    font-family: "Poppins", sans-serif;
+}
+
+.image-container {
+    background: url(/images/image_processing20210912-17655-1psy0hb.gif) center
+        no-repeat;
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    left: 20px;
+}
+
+.form-container {
+    background-color: var(--body);
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.form-box h4 {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.col-sm-6 {
+    padding-top: 10px;
+}
+
+.form-label {
+    margin-top: 10px;
+}
+
+/* footer */
+
+.footer-top {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    background-color: var(--dark);
+}
+
+.footer-top .logo {
+    width: 120px;
+}
+
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: var(--white);
+}
+
+.footer-top i {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 8px 4px;
+    color: var(--body);
+    transition: all 0.45s ease;
+}
+
+.footer-top .footlogo:hover {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.footer-bottom {
+    background-color: var(--dark);
+    color: var(--body);
+}
+
+.footer-top li {
+    font-size: 14px;
+    color: var(--body);
+    text-align: justify;
+}
+
+.footer-top .logo {
+    margin-left: -10px;
+}
+
+/* Rest */
+
+@media (max-device-width: 480px) {
+    .image-container {
+        height: 70vh;
+    }
+}
