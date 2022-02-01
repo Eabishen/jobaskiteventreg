@@ -43,11 +43,54 @@ img {
 
 #hero {
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+#hero .heading-box {
+    padding-top: 80px;
+}
+
+#hero .fixedbtn {
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 150px;
+    right: 0;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ce1092;
+    font-weight: 700;
+    border: 1px solid;
+    z-index: 109;
+}
+
+#hero .heading-box h1 {
+    color: #ce1092;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.heading-box .last-cont .custspan {
+    font-weight: 700;
+}
+
+#hero .heading-box p {
+    color: var(--dark);
+    line-height: 25px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+#hero .heading-box h6 {
+    color: var(--dark);
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: justify;
+    line-height: 30px;
 }
 
 #reg {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 20px auto;
     position: relative;
     box-shadow: var(--box-shadow);
 }
@@ -69,6 +112,7 @@ img {
 .contbox {
     padding: 20px 0;
     font-family: "Poppins", sans-serif;
+
     /* box-shadow: var(--box-shadow); */
 }
 
@@ -108,7 +152,7 @@ img {
 .contbox .team-names:focus + .label,
 .contbox .team-names.not-empty + .label {
     transform: translateY(-24px) translateX(-10px);
-
+    color: #4a0b6b;
     font-size: 18px;
     font-weight: 500;
 }
@@ -120,7 +164,7 @@ img {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-    color: #4a0b6b;
+    color: #082c66;
     cursor: text;
     transition: transform 0.2s ease-in-out;
 }
@@ -156,7 +200,7 @@ img {
     box-shadow: var(--box-shadow);
 }
 
-.navbar .btn {
+/* .navbar .btn {
     font-size: 15px;
     border: 1px solid;
     color: #4a0b6b;
@@ -165,7 +209,7 @@ img {
     background: url(/images/bg.png) no-repeat center;
     background-size: cover;
     color: var(--white);
-}
+} */
 
 .navbar .nav-link {
     font-family: Roboto, "sans-serif";
@@ -181,8 +225,8 @@ img {
     background: url(/images/image_processing20210912-17655-1psy0hb.gif) center
         no-repeat;
     background-size: contain;
-    height: 100vh;
     position: relative;
+    height: 80vh;
 }
 .logo {
     position: absolute;
@@ -197,16 +241,6 @@ img {
     justify-content: center;
 }
 
-.form-box {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: start;
-    justify-content: center;
-
-    padding: 0 20px;
-}
-
 .formt {
     position: relative;
 }
@@ -214,7 +248,7 @@ img {
 .formt input {
     width: 100%;
     height: 100%;
-    color: #5d4f72;
+    color: red;
     padding-top: 20px;
     border: none;
 }
@@ -226,31 +260,37 @@ img {
     width: 100%;
     height: 100%;
 }
-
+/* hero container */
 .form-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: start;
+    justify-content: start;
+    padding-top: 50px;
+    padding-right: 20px;
     font-weight: bold;
     color: var(--primary);
     border-radius: 10px;
 }
 
-.form-box h2 {
+.form-box h1 {
     color: #ce1092;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .form-box .last-cont h6 {
     text-align: justify;
-    line-height: 30px;
-}
-
-.form-box .last-cont .custspan {
-    font-weight: 700;
+    line-height: 38px;
+    margin-top: 20px;
 }
 
 .form-box .last-cont p {
     text-align: justify;
     font-weight: 700;
     color: var(--dark);
+    line-height: 40px;
+    margin-top: 30px;
 }
 
 .form-box h6 {
@@ -314,8 +354,64 @@ img {
 
 /* Rest */
 
-@media (max-device-width: 480px) {
+@media (max-width: 991px) {
+    #hero .fixedbtn {
+        position: fixed;
+        transform: rotate(-90deg);
+        top: 150px;
+        right: 0;
+        padding: 8px 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ce1092;
+        font-weight: 500;
+        border: 1px solid;
+    }
+}
+
+@media (max-device-width: 798px) {
+    .form-box {
+        min-height: 50%;
+    }
+
     .image-container {
-        height: 70vh;
+        height: 50vh;
+        padding-bottom: 0;
+    }
+
+    .heading-box {
+        padding-top: 10px;
+    }
+    #hero .fixedbtn {
+        display: none;
+    }
+}
+@media (max-device-width: 559px) {
+    #hero .fixedbtn {
+        display: none;
+    }
+}
+
+@media (max-device-width: 480px) {
+    #hero .fixedbtn {
+        display: none;
+    }
+
+    .image-container {
+        padding-top: 20px;
+        height: 60vh;
+        padding-bottom: 0;
+    }
+
+    .heading-box {
+        padding-top: -200px;
+    }
+
+    .form-box {
+        padding: 0px 20px;
+        min-height: 50%;
+    }
+
+    .footer-bottom {
+        font-size: 11px;
     }
 }
